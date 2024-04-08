@@ -1,0 +1,11 @@
+<script setup>
+import {ref, onMounted} from 'vue';
+import MovieForm from '@/component/MovieForm.vue';
+
+
+
+</script>
+
+<template>
+
+</template>

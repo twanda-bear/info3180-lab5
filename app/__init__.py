@@ -1,7 +1,13 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
 from .config import Config
+from flask_migrate import Migrate
+#from app import views
+
 
 app = Flask(__name__)
 app.config.from_object(Config)
 
-from app import views
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
